@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+.calculator {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(148, 198, 249);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.mid-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.output {
+  background: rgba(0, 0, 0, .75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px;
+  height: auto;
+  margin-bottom: 2px;
+}
+
+.prev-op {
+  color: rgb(224, 222, 222);
+  font-size: 16px;
+}
+
+.current-op {
+  color: white;
+  font-size: 28px;
+}
+
+button {
+  padding: 15px 10px;
+  border: none;
+  margin: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.50);
+}
+
+.inp {
+  background: none;
+  border: none;
+}
+
+.inp:focus {
+  outline: none;
+}
