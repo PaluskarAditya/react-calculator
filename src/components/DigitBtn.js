@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export default function DigitBtn(props) {
-    const onclick = (e) => {
-        console.log(e.target.id)
-    }
+  const onclick = (e) => {
+    console.log(e.target.id);
+  };
 
-    return (
-        <button id={props.num} onClick={onclick}>{props.num}</button>
-    )
+  return (
+    <button id={props.num} onClick={onclick}>
+      {props.num}
+    </button>
+  );
 }
